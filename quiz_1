@@ -1,0 +1,128 @@
+1. True or False?: According to the course Syllabus, if you cannot write an application that meets all of the requirements, you can get partial credit by writing an application that meets some of the requirements you can compensate for missing requirements by adding functionality that is not required
+- False
+
+2. True or False?: According to the course Syllabus, you get a 1 bonus point for attending each lecture, and if you arrive at 6:31 or later, you get no bonus point.
+- True
+
+3. True or False?: According to How To Submit Homework, your Java code must use the same naming conventions and formatting as the samples on the course web site at Lecture 1: Introduction.
+- 4 spaces
+
+4. What is the file extension for source code?
+.java
+
+5. Source code is the output of the Java programmer and the input to the Java compiler.
+a. programmer b. compiler
+
+5. What is the file extension for byte code?
+.class
+
+6. Byte code is the output from the Java ____________ and the input to the Java __i_____________.
+a. compiler (is called javac) b. interpreter (is called java, -- and the language is called java)
+
+7. True or false: First, Java source code is interpreted, and then it is compiled.
+- False
+
+8. At http://www.oracle.com/technetwork/java/javase/downloads/index.html, what does SE stand for?
+- Standard Edition
+
+9. What does JDK stand for?
+- Java Development Kit
+
+10. What does JRE stand for?
+- Java Runtime Environment
+
+11. Is the compiler included in the JRE or the JDK?
+- JDK
+
+12. What does the acronym JVM stand for?
+- Java Virtual Machine
+
+13. What is the point of entry for program execution?
+- main()
+
+14. What does the command javac invoke?
+- the compiler, turn the Java code into bytecode and store it in a class file.
+
+15. What does the command java invoke?
+- the interpreter, we are basically saying, "i want the interpreter to read my class file and outputs native code"
+
+16. How many methods named main should a program have?
+- one
+
+17. A variable is a named location in _____________.
+- memory
+
+18. A ______________ is a template for making objects.
+- class
+
+19. An object is an instance of a ____________.
+- class
+
+20. What are the names of three fundamental concepts of OOP?
+- inheritance
+- encapsulation - the unit of encapsulation is the class
+- polymorphism
+
+21. If you write a class named HelloWorld, and you misname the file helloworld.java, forgetting that Java is case-sensitive:
+Does the code compile? - yes
+Does the code run? - no
+
+22. What is args in HelloWorld?
+- args is an object variable that represents an array of type String, that represent optional command-line arguments
+
+23. Does every main method have a runtime argument named args?
+- yes
+
+24. Is the source code extension, .java, required when invoking the compiler at the command line?
+- yes
+
+25. Is the byte code extension, .class, required when invoking the interpreter at the command line?
+- no
+
+26. What is the difference between System.out.print() and System.out.println()?
+- System.out.println() new line when done printing
+- System.out.print() no new line when done printing
+
+27. What must you type at the command line to launch a Java application with two arguments in the array of Strings that is passed to the main method?
+For example, to make HelloWorld write your first name and last name to the screen.
+- java HelloWorld Laura Kirby
+
+28. What should be the name of the following source code file?:
+HelloWorld
+HelloWorld.txt
+HelloWorld.java
+--> HelloWorldDemoStaticVersion2.java
+  - the one with the main method because it is the point of entry for execution
+HelloWorld.class
+
+
+_____________________
+End of Quiz.
+_____________________
+
+Notes:
+Homework is due by 5:59 and then you lose credit
+For now, everyone's student number is SO1
+
+
+header of homework:
+/*
+  student s01 Laura Kirby
+  homework 1
+  usage: java HelloWorld
+
+*/
+
+email subject: s01, Laura Kirby, Homework 1
+attach Java file
+Home and quiz due on Monday at 5:59pm
+
+embeded os - fastest
+c - second fastest
+
+static, exists and is accessible before an actual object is created, only one copy. special place (and only stored in one place for efficiency) for static data
+other class methods are not accessible before instantiating an instance
+
+fields --> similar to property --> represent data
+constructor ---> how i initialize an instance of the class
+method ---> behavior of that instance
