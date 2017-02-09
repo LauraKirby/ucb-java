@@ -1,0 +1,76 @@
+class is
+
+Quiz 2
+  1.  What is the purpose of the Scanner class? See http://docs.oracle.com/javase/8/docs/api/index.html?java/util/Scanner.html ? 
+
+  it will return the given input as a string. it can "scan" items like keyboard input and text in a file and return a string.
+
+  2.  List four of the fundamental data types of Java provided by the java.lang package at http://docs.oracle.com/javase/8/docs/api/java/lang/package-frame.html ? 
+    - int
+    - char
+    - float
+    - double
+
+  3.  Which floating point type is the most important in Java? (Hint: Whereas a float is 32 bits wide, this data type is 64 bits wide.) 
+    - double
+
+  4.  Fill in the blanks:  
+    // "equal to" relational operator  if(myInt == yourInt) System.out.println("OK);   
+    // assignment operator - sets the value  // of the right operand onto the left operand int myInt = yourInt; 
+
+  5.  If we write  final String MY_NAME = "Thomas";  we create a special type of variable, a constant, which means the value cannot be changed.
+ Write two unrelated statements that happen to include the keyword final
+    a.  the first declaring that BOILING_POINT is a constant of type int (no assignment) 
+      final int BOILING_POINT;
+    b.  the second both declaring and assigning a value to a different constant of type int named MAXIMUM_HIGHWAY_SPEED. 
+      final int MAXIMUM_HIGHWAY_SPEED = 10
+
+  6.  What are the data types of the following?: first 10.0 and then 10 
+    - float
+    - integer
+
+  7.  Write an expression that casts myDouble to a int:    int myInt = (______________) myDouble; 
+  8.  Write the operators for (a) OR and (b) short-circuit AND 
+    a. |
+    b. &&
+  9.  True or false: the two boolean types are the string literals "true" and "false". 
+    false
+  10. Write the escape sequence for a new line, then for a tab. 
+  11. The visibility or __s_________ of a variable is the code block in which the variable is declared. 
+    a. scope
+  12. If the compiler error is "possible lossy conversion", you need to ___c_____ the right operand to a narrower type, such as treating a double as if it were an int. 
+    a. cast
+  13. Assume we have declared final double BOILING_POINT = 100.00; 
+    Write the code that ___________ the value of this constant to an integer value and stores that int value in a different constant, final int MY_INT_BOILING_POINT 
+    a. cast
+  14. The java.lang package contains a class named Math. What is the name of the method of this class that returns the square root of the runtime argument? 
+    sqrt
+  15. Every method declaration must specify the _r________ type (or output type) of the method, even if the method returns no __va_________, in which case it is __vo_______. 
+    return, value, void
+  16. What is the data type of the value returned by the method that returns the square root of the runtime argument? 
+    double
+  17. What is the compound operator for a running total?  (See compound operators) 
+    +=
+  18. Write an expression with a compound operator that represents the same logic as  myAccountBalance = myAccountBalance - myWithdraws; (See compound operators) 
+    -=
+  19. For a byte that is being cast as an int, 1 + 127 equals what value? Is the value 128 within the range of the byte data type? Will the byte value, like an analog clock hand going past "12", arrive at the lowest value, as if wrapping around itself? (see Table of Data Types) 
+    - -128 (negative 128)
+    - no
+    - yes
+  20. Which method of the java.util.Scanner class returns the integer that the user typed into the input stream? See http://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html 
+    - nextInt()
+  21. Which method of the java.util.Scanner class returns the string that the user typed into the input stream?
+      - next()
+    a.  To make that Scanner method return that value, must you declare a variable? 
+      - yes (sort of)
+    b.  Could that value be either a standard variable or a constant variable? 
+      - yes
+  22. Indicate true or false for each assertion:
+    a.  parentheses follow the name of a method  - True
+    b.  parentheses contain the list of runtime arguments  - True
+    c.  parentheses contain the list of formal parameters  - True
+    d.  parentheses contain the assignment of a constant  - False
+    e.  parentheses enclose the expression of an if statement  - True
+    f.  parentheses enclose the target data type for a cast operation  - True
+    g.  parentheses enclose the command-line arguments the user types at the command-line  - False
+
