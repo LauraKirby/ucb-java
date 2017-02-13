@@ -32,7 +32,7 @@ class UserInput
 
         if (userIntOne >= 0 && userIntTwo >= 0)
         {
-            System.out.println("You have entered two positive number.");
+            System.out.println("You have entered two positive numbers.");
         }
         else if (userIntOne >= 0 || userIntTwo >= 0)
         {
