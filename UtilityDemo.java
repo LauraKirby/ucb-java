@@ -1,6 +1,7 @@
 import java.util.*;
-
-// set up class
+// 1. compile time
+// 2. class definitiions
+// 3. run time
 class Utility
 {
     int multiply(int firstInt, int secondInt)
@@ -8,6 +9,9 @@ class Utility
         return firstInt * secondInt;
     }
 }
+
+
+// are classes in
 
 // run time
 class UtilityDemo

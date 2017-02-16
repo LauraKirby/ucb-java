@@ -1,0 +1,84 @@
+Quiz 3
+1.  Which type of loop is guaranteed to run at least once?
+  a. do while
+
+2.  An if statement must present a test that evaluates to which data type?
+  a. boolean
+
+3.  What statement can you add after if and else if to handle any conditions they do not handle?
+  a. else
+
+4.  True or false:
+In Java, the logic of an "if, else if, else" ladder is different from that of a switch because a switch needs the keyword "break" to avoid one case falling through to the next case, but with "if, else if, else" the evaluations are 100% separate.
+  a. true
+
+5.  True or false:
+(a) A case in a switch expression can check for a floating-point value.
+  - False
+(a) A case in a switch expression can check for a String value.
+  - True, as of JDK 7
+
+6.  The following
+  for(;;) { }
+  is called an ________ loop. Writing it this way, it is clearly intentional, not a bug. Name two common use cases for such a loop?
+(a) infinite
+(b) keeping a computer on, terminal input
+
+7.  Rewrite the following as a for loop:
+int i = 0;
+while(i < 5)
+{ System.out.println(i);
+i++;
+}
+
+for (int i = 0; i < 5; i++)
+{
+  System.out.println(i);
+}
+
+8.  The keyword _________ causes a loop to immediately terminate its current iteration and exit completely from the loop, without evaluating the possibility of re-iteration.
+  - break
+
+9.  The keyword _________ causes a loop to immediately terminate its current iteration to evaluate whether it can reenter the loop's next iteration.
+  - continue
+
+10. If the awaited condition of a switch does not occur, execution goes to the optional  __________ statement.
+  - default
+
+11. If you write a switch in which two cases test for the same constant value, will you get a runtime error or a compiler error?
+  - complier
+
+12. Fill in the blank:
+  - break
+
+13. Fill in the blank:
+  - else
+
+14. A for loop contains three expressions in the following order: (a) initialization of the counter, (b) condition to test, and (c) increment the counter.
+  (a) What is the order of these three expressions in a while loop?
+    a. initialization, b. test, c. increment
+
+  (b) What is the order of these three expressions in a do while loop?
+  a. a c b
+
+15. Does Java have a way to generate a number that appears to be a random number? If so, what is it?
+  -
+  - java.util.Random.nextInt()
+16. Write the code that returns the first letter of a String as a char.
+  - charAt(0)
+
+17. Write the code that converts an uppercase String to a lowercase String.
+  - String inputLK = "HELLO"
+    inputLK.toLowerCase()
+    inputLK.toUpperCase()
+
+20. What is System.in?
+  - user input from the console
+
+21. What is System.out?
+  - items printed to the console
+
+22. In the most common form of a standard for loop, the counter value is changed:
+• As soon as the condition test evaluates to true.
+• Just before testing the condition.
+--> • As soon as the last line of code in the loop block has finished execution.
