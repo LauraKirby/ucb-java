@@ -8,33 +8,32 @@ Quiz 3
 3.  What statement can you add after if and else if to handle any conditions they do not handle?
   a. else
 
-4.  True or false:
-In Java, the logic of an "if, else if, else" ladder is different from that of a switch because a switch needs the keyword "break" to avoid one case falling through to the next case, but with "if, else if, else" the evaluations are 100% separate.
+4.  True or false: In Java, the logic of an "if, else if, else" ladder is different from that of a switch because a switch needs the keyword "break" to avoid one case falling through to the next case, but with "if, else if, else" the evaluations are 100% separate.
   a. true
 
 5.  True or false:
-(a) A case in a switch expression can check for a floating-point value.
-  - False
-(a) A case in a switch expression can check for a String value.
-  - True, as of JDK 7
+  (a) A case in a switch expression can check for a floating-point value.
+    - False
+  (a) A case in a switch expression can check for a String value.
+    - True, as of JDK 7
 
 6.  The following
   for(;;) { }
   is called an ________ loop. Writing it this way, it is clearly intentional, not a bug. Name two common use cases for such a loop?
-(a) infinite
-(b) keeping a computer on, terminal input
+  (a) infinite
+  (b) keeping a computer on, terminal input
 
 7.  Rewrite the following as a for loop:
-int i = 0;
-while(i < 5)
-{ System.out.println(i);
-i++;
-}
+  int i = 0;
+  while(i < 5)
+  { System.out.println(i);
+  i++;
+  }
 
-for (int i = 0; i < 5; i++)
-{
-  System.out.println(i);
-}
+  for (int i = 0; i < 5; i++)
+  {
+    System.out.println(i);
+  }
 
 8.  The keyword _________ causes a loop to immediately terminate its current iteration and exit completely from the loop, without evaluating the possibility of re-iteration.
   - break
@@ -79,6 +78,6 @@ for (int i = 0; i < 5; i++)
   - items printed to the console
 
 22. In the most common form of a standard for loop, the counter value is changed:
-• As soon as the condition test evaluates to true.
-• Just before testing the condition.
---> • As soon as the last line of code in the loop block has finished execution.
+  • As soon as the condition test evaluates to true.
+  • Just before testing the condition.
+  --> • As soon as the last line of code in the loop block has finished execution.

@@ -19,7 +19,7 @@
         a. see Lecture 2: Data Types#Combiningrelationalandlogicaloperators
  */
 import java.util.*;
-class UserInput
+class UserInputHwTwo
 {
     public static void main(String[] args)
     {

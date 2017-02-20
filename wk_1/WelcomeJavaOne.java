@@ -9,7 +9,7 @@
     3. makes use of String[] args
  */
 
-class WelcomeJava
+class WelcomeJavaHwOne
 {
     public static void main(String[] args)
     {
