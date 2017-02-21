@@ -20,3 +20,7 @@ public class DoWhileDemoBlindToFalse
     System.out.println("This loop will iterate at least one time, even if the condition is false.");
   }
 }
+
+// main is the runtime
+// call a constructor to get an instance
+//

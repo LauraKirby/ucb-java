@@ -16,4 +16,7 @@ class ContinueDemoWithMethodInsideCondition
     }
 }
 
-// string is implementsed as an array of chars
+/*
+    string is implemented as an array of chars
+    System is the JVM
+*/
