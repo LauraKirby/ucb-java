@@ -26,8 +26,9 @@ Quiz 3
 7.  Rewrite the following as a for loop:
   int i = 0;
   while(i < 5)
-  { System.out.println(i);
-  i++;
+  {
+      System.out.println(i);
+      i++;
   }
 
   for (int i = 0; i < 5; i++)
@@ -53,29 +54,30 @@ Quiz 3
 13. Fill in the blank:
   - else
 
-14. A for loop contains three expressions in the following order: (a) initialization of the counter, (b) condition to test, and (c) increment the counter.
+14. A for loop contains three expressions in the following order:
+  (a) initialization of the counter, (b) condition to test, and (c) increment the counter.
   (a) What is the order of these three expressions in a while loop?
     a. initialization, b. test, c. increment
 
   (b) What is the order of these three expressions in a do while loop?
-  a. a c b
+    a. a c b
 
 15. Does Java have a way to generate a number that appears to be a random number? If so, what is it?
-  -
   - java.util.Random.nextInt()
+
 16. Write the code that returns the first letter of a String as a char.
-  - charAt(0)
+  - String hello = "Hello";
+  - hello.charAt(0);
 
 17. Write the code that converts an uppercase String to a lowercase String.
   - String inputLK = "HELLO"
-    inputLK.toLowerCase()
-    inputLK.toUpperCase()
+    inputLK.toLowerCase();
 
 20. What is System.in?
-  - user input from the console
+  - user input from the console (screen/window)
 
 21. What is System.out?
-  - items printed to the console
+  - items printed to the console (screen/window)
 
 22. In the most common form of a standard for loop, the counter value is changed:
   • As soon as the condition test evaluates to true.
