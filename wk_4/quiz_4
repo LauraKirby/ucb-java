@@ -1,0 +1,117 @@
+Quiz 4 (MS Word Version)
+ 
+1.  A class contains three kinds of members, and the source code should be present them in the following order:
+a.  fields
+b.  constructors
+c.  methods
+
+2.  Why does java.lang.Integer contain all three kinds of members?  
+    a. Because it is a class
+    b. For dynamic functionality (field: size, constructor: allows us to pass an argument, method: toFloat)
+
+3.  True or False:
+    a.  A class is an instance of an object.  False
+    b.  An instance variable is efficient for memory because there can be only one instance of such a variable.  False
+    c.  The most efficient way to initialize a scanner is to use a statement like:  Scanner myScanner = new Scanner();  False, must pass a runtime argument
+
+4.  Why does java.util.Date only contain two kinds of members, and which are they? 
+      a. Method and Contructor
+      b. because it returns all the data that would be considered "date" in the one field. the methods will provide variations of the data but is doesn't need to be stored on separate fields
+
+5.  Why does java.lang.System only contain two kinds of members, and which are they? 
+      a. Field Method
+      b. It already exsits, it's the JVM (i think)
+
+6.  An object is a _r____________ type in the sense that two objects can point to the same place in JVM __m________________, such that a change to the data of one object changes the data of both objects. 
+      a. reference  b. memory
+
+7.  The new operator allocates memory for a newly created __________. 
+      a. object
+
+8.  The most indicative name for a method in a class that has only one method is method() 
+      a. false, methods should have names that describe what they do
+
+9.  A class defines members to hold data and enact behavior. Another name for a f_____, or i__________ variable, is attribute, state, or property. 
+      a. field, instance
+
+10. The Java term for the code that defines the "behavior" or "operation" that is callable on an object is "method" (not function), and the method name should not be a noun but rather a ___________. 
+      a. verb
+
+11. A constructor's name must match that of the ___________ for which it performs instantiation. 
+      a. class
+
+12. True or False: The code blocks for constructors and methods define how an object is initialized.  
+      a. False, unless the the constructor is calling a method
+
+13. True or False: An instance variable is stored in memory at the class level and a static variable is stored in memory at the object level. 
+      a. False
+
+14. True or False: Before you can use a static method, you must first call the static constructor of that class to instantiate and initialize the object. 
+      a. False
+15.  True or False: Java provides a large library classes at http://docs.oracle.com/javase/8/docs/api/ so it is seldom the case that a Java programmer needs to create a new class. 
+      a. False
+
+16. True or False: A carefully designed constructor ensures an object will behave properly as situations change during runtime. 
+      a. False
+
+17. By convention, a method name begins with a letter that is ______. (uppercase or lowercase) 
+      a. lowercase
+
+18. By convention, a constructor name begins with a letter that is _______. (uppercase or lowercase) 
+upper
+
+19. By convention, a field  name begins with a letter that is _______. (uppercase or lowercase) 
+lower
+
+20. By convention, a constant name contains solely _________ (uppercase or lowercase) letters and can have underscore (_). 
+upper
+
+21. Write the code that declares and assigns a value to a constant for the speed limit on the open freeway in Nevada.  
+final int SPEED_LIMIT = 80
+
+22. What does the keyword return do to the execution of a method that is void? 
+stops exectution of the methods and returns exectution to the caller
+
+23. What does the keyword return do if the method is not void? 
+stops execution of the method
+
+24. True or False: Like a void method, a constructor must specify a return value of void. 
+
+
+25. If a formal parameter is specified in a method definition, a call to that method must include a runtime _a____________ of a matching data type. 
+  a. argument
+
+26. To call a method on an object (or of a class), or to access the instance variables on an object (or static variables of a class), use the _____ operator between the name of the object (or class) and the name of the method. 
+  a. dot
+
+27. True or False: The formal parameter in a method definition must be a primitive type, such as int, double, or boolean. 
+  a. False, it can be a reference type
+
+28. A string has the length() method to represent its number of characters. An array has the ________ field to represent its number of elements, whether those elements are populated or not. 
+a. length
+
+29. A static field is also called a __c_________ variable, and a non-static field is also called an __i________ variable 
+a. class b. instance
+
+30. Fill in the blanks with appropriate names for fields (nouns) and methods (verbs). 
+• A TrafficLight object has ___[noun/field - one single field]__________ and does _____[verb/method]_________ [one single method]. 
+  - field: color
+  - method: switchColor
+• A Student object has ___[noun/field]__________ and does _____[verb/method]_________. 
+  - field: degree
+  - method: daysUntilGraduation
+• A Customer object has ___[noun/field]__________ and does _____[verb/method]_________. 
+  - field: age
+  - method: buyJuice
+• An Employee object has ___[noun/field]__________ and does _____[verb/method]_________. 
+  - field: name
+  - method: completeTasks
+• A Car object has ___[noun/field]__________ and does _____[verb/method]_________. 
+  - field: color
+  - method: reverse
+• A Book object has a ___[noun/field]__________. (A class does not necessarily have to define method.) 
+  - field: title
+  - method: N/A - the book doesn't preform actions on things
+• A SignChanger object, which makes a positive number negative and negative number positive, does _____[verb/method]_________. (A class does not necessarily have to include a field.) 
+  - field: no data
+  - method: changeSign
