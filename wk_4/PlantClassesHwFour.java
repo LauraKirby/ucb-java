@@ -73,10 +73,10 @@
 class Plant
 {
   // 5. class variable (1)
+  private static String[] primitiveTypes = new String[] {"fern", "moss"};
   static String cholorplast = "I contain chlorophyll, a green pigment that absorbs light energy for photosynthesis";
 
   // 4. instance variable, also known as a field (1)
-  private static String[] primitiveTypes = new String[] {"fern", "moss"};
   String name;
   int cellCount;
 
@@ -87,7 +87,16 @@ class Plant
     this.cellCount = cellCount;
   }
 
-  // parameterized method
+  boolean isPrimitive () {
+    String plantType = this.name.toLowerCase();
+    boolean result = false;
+    if (plantType.equals("fern") || plantType.equals("moss")) {
+      result = true;
+    }
+    return result;
+  }
+
+  // 3. parameterized method (1)
   String suckInNutrients (String mode) {
     System.out.println("I absorb nutrients through my " + mode + ".");
     String response = "Moving water in, the mode is unknown.";
@@ -103,16 +112,6 @@ class Plant
     return response;
   }
 
-  boolean isPrimitive () {
-    String plantType = this.name.toLowerCase();
-    boolean result = false;
-    if (plantType.equals("fern") || plantType.equals("moss")) {
-      result = true;
-    }
-    return result;
-  }
-
-  // 3. parameterized method (1)
   Integer calculateChloroplast (Integer cells) {
     Integer chloroplastRatio = 100;
     Integer totalCholoroplast = (cells * chloroplastRatio);
@@ -173,19 +172,25 @@ class PlantClassesHwFour
   public static void main(String[] args)
   {
     // 1 & 2. instantiate instance of class and add agruments to parameterized constructor (1)
-    Plant fern = new Plant("Fern", 30);
+    Plant aPlant = new Plant("Fern", 30);
 
-    if (fern.isPrimitive()) {
-      System.out.println("I must have some funny looking parts");
+    if (aPlant.isPrimitive()) {
+      System.out.println("Since I am a primitive plant, I must have some unique parts");
     }
 
     // 3. parameterized method (1)
-    fern.suckInNutrients("roots");
-    fern.calculateChloroplast(100000);
+    System.out.println("My plant's method for receiving nutrients: ");
+    aPlant.suckInNutrients("roots");
+
+    System.out.println("My plant's total cholorplast: ");
+    aPlant.calculateChloroplast(100000);
 
     // 4. instance variable, also known as a field (1)
-    System.out.println(fern.cellCount);
-    System.out.println(fern.name);
+    System.out.println("My plant's cell count: ");
+    System.out.println(aPlant.cellCount);
+
+    System.out.println("My plant's name: ");
+    System.out.println(aPlant.name);
 
     // 5. class variable (1)
     System.out.println(Plant.cholorplast);

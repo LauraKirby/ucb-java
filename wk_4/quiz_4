@@ -1,9 +1,9 @@
-Quiz 4 (MS Word Version)
+Quiz 4
  
 1.  A class contains three kinds of members, and the source code should be present them in the following order:
-a.  fields
-b.  constructors
-c.  methods
+    a.  fields
+    b.  constructors
+    c.  methods
 
 2.  Why does java.lang.Integer contain all three kinds of members?  
     a. Because it is a class
@@ -58,60 +58,60 @@ c.  methods
       a. lowercase
 
 18. By convention, a constructor name begins with a letter that is _______. (uppercase or lowercase) 
-upper
+    a. upper
 
 19. By convention, a field  name begins with a letter that is _______. (uppercase or lowercase) 
-lower
+    a. lower
 
 20. By convention, a constant name contains solely _________ (uppercase or lowercase) letters and can have underscore (_). 
-upper
+    a. upper
 
 21. Write the code that declares and assigns a value to a constant for the speed limit on the open freeway in Nevada.  
-final int SPEED_LIMIT = 80
+    a. final int SPEED_LIMIT = 80
 
 22. What does the keyword return do to the execution of a method that is void? 
-stops exectution of the methods and returns exectution to the caller
+    a. stops exectution of the method and returns exectution to the caller
 
 23. What does the keyword return do if the method is not void? 
-stops execution of the method
+   a. stops execution of the method
 
 24. True or False: Like a void method, a constructor must specify a return value of void. 
-
+    a. False
 
 25. If a formal parameter is specified in a method definition, a call to that method must include a runtime _a____________ of a matching data type. 
-  a. argument
+    a. argument
 
 26. To call a method on an object (or of a class), or to access the instance variables on an object (or static variables of a class), use the _____ operator between the name of the object (or class) and the name of the method. 
-  a. dot
+   a. dot
 
 27. True or False: The formal parameter in a method definition must be a primitive type, such as int, double, or boolean. 
-  a. False, it can be a reference type
+   a. False, it can be a reference type
 
 28. A string has the length() method to represent its number of characters. An array has the ________ field to represent its number of elements, whether those elements are populated or not. 
-a. length
+    a. length
 
 29. A static field is also called a __c_________ variable, and a non-static field is also called an __i________ variable 
-a. class b. instance
+    a. class b. instance
 
 30. Fill in the blanks with appropriate names for fields (nouns) and methods (verbs). 
-• A TrafficLight object has ___[noun/field - one single field]__________ and does _____[verb/method]_________ [one single method]. 
-  - field: color
-  - method: switchColor
-• A Student object has ___[noun/field]__________ and does _____[verb/method]_________. 
-  - field: degree
-  - method: daysUntilGraduation
-• A Customer object has ___[noun/field]__________ and does _____[verb/method]_________. 
-  - field: age
-  - method: buyJuice
-• An Employee object has ___[noun/field]__________ and does _____[verb/method]_________. 
-  - field: name
-  - method: completeTasks
-• A Car object has ___[noun/field]__________ and does _____[verb/method]_________. 
-  - field: color
-  - method: reverse
-• A Book object has a ___[noun/field]__________. (A class does not necessarily have to define method.) 
-  - field: title
-  - method: N/A - the book doesn't preform actions on things
-• A SignChanger object, which makes a positive number negative and negative number positive, does _____[verb/method]_________. (A class does not necessarily have to include a field.) 
-  - field: no data
-  - method: changeSign
+    • A TrafficLight object has ___[noun/field - one single field]__________ and does _____[verb/method]_________ [one single method]. 
+      - field: color
+      - method: switchColor
+    • A Student object has ___[noun/field]__________ and does _____[verb/method]_________. 
+      - field: degree
+      - method: daysUntilGraduation
+    • A Customer object has ___[noun/field]__________ and does _____[verb/method]_________. 
+      - field: age
+      - method: buyJuice
+    • An Employee object has ___[noun/field]__________ and does _____[verb/method]_________. 
+      - field: name
+      - method: completeTasks
+    • A Car object has ___[noun/field]__________ and does _____[verb/method]_________. 
+      - field: color
+      - method: reverse
+    • A Book object has a ___[noun/field]__________. (A class does not necessarily have to define method.) 
+      - field: title
+      - method: N/A - the book doesn't preform actions on things
+    • A SignChanger object, which makes a positive number negative and negative number positive, does _____[verb/method]_________. (A class does not necessarily have to include a field.) 
+      - field: no data
+      - method: changeSign
