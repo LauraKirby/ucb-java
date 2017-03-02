@@ -1,0 +1,25 @@
+Class 5 notes:
+
+doesn't seem like an accurate description. "a String object is internally implemented as an array of chars"
+
+A String object is
+
+
+
+Is it accurate to state that Java string objects are intrinsically a class defined as an immutable array of chars?
+No. A Java String object is (currently - it's an implementation detail which I gather may be changing) a class containing a few fields:
+
+A char[] containing the actual characters
+A starting index into the array
+A length
+A cached hash code, lazily computed
+
+overloaded method -- two methods with the same name, where they each accept a different number of arguments an example of polyphorphism
+
+csv comma separated values
+
+the reference may be different when two variables point to the same object
+the reference is translated by the jvm? to find the correct object
+
+are any other packages included with the current version of JVM that we installed on our computer
+ternary (some latin way of saying three) - condition ? value : value -- there are 3 parts

@@ -1,0 +1,72 @@
+Quiz 5 - 
+  1.  An array is a collection of variables, all of which must be of the same _______. 
+    a. type
+  2.  Write the code that declares that an unpopulated array of type String named daysOfWeek contains seven elements. 
+    a. String[] daysOfWeek = new String[7];
+  3.  Write one line of code that declares and populates the String array daysOfWeek by using an array initializer. 
+    a. String[] daysOfWeek = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+
+  4.  Write a for each loop that prints the Strings in the daysOfWeek array. 
+    a. for (String s : daysOfWeek)
+          System.out.println(s);
+
+  5.  Why does this program crash? ￼
+    a. out of bounds because of the index will increase until the length due to <=
+
+  6.  Based on the evidence in ReplaceDemo.java and StringImmutabilityDemo.java, if you reassign the value of a String String myString = "hello";   myString = "goodbye"; does Java 
+    a. modify the original myString object, or 
+    ---> b. create a new myString object? 
+
+  7.  What is the return type of String.equals(String str) method of the API specification? - http://docs.oracle.com/javase/8/docs/api/java/lang/String.html#method.summary  
+    a. boolean
+
+  8.  In the main method: (a) What does args contain? (b) Where does args initially get its contents? (c) Can args be empty?  (e) Is it possible to change the value of args[0] ?  
+    a. array of strings, b. user input when application is run, c. yes, but you cannot change the length of an array
+
+  9. The name of the ? operator is: (a) the ornery operator, (b) the thorny operator, (c) the ternary operator 
+    ---> c. ternary
+
+  10. Rewrite the following Java code using if and else:  x < 0 ? y = 10 : y = 20; 
+    if (x < 0) y = 10
+    else y = 20;
+
+  11. The ? operator executes its third clause, which begins with semicolon (:), if the first clause, which ends with ?, evaluates to a boolean _________. 
+    - False
+
+  12. Which method of the String class indicates how many characters are in the String object? Note: The list of methods (and their return values) is at http://docs.oracle.com/javase/8/docs/api/java/lang/String.html#method.summary  
+    - length()
+
+  13. Which method of the String class returns the character at the location you specify? 
+    - charAt()
+  14. Which method of the String class indicates whether the return value of length() is 0? 
+    - isEmpty()
+
+  15. Which method of the String class cuts a String into two Strings if the specified character is present?: _______ 
+    - split()
+
+  16. Which method of the String class removes any leading and trailing white space from a String?: ________ 
+    - trim()
+
+  17. True or false: To get a new String that contains letters from the middle of a word,  use the single parameter overload of the substring method           ￼
+    - False
+
+  19. Which method of the String class tests whether or not a substring is present in a String? Hint: it is not substring()._________ 
+    - contains()
+
+  20. Which method of the String class allows you to substitute '!' wherever the String currently has '?'  ________  
+    - replace()
+
+  21. The first code example tonight uses the overloaded String constructor version that allows for  String creation from an array of type _______. 
+    - char
+
+  22. What is the return type of the equals() method? _______ 
+    - boolean
+
+  24. Which String method indicates whether you have passed in the correct suffix to the String? 
+    - endsWith()
+
+  25. Which String method indicates whether you have passed in the correct prefix to the String? 
+    - beginsWith()
+
+  25. Fill in the blanks: "to"._______("get").____________("her") such that the result is "together"
+    - concat, concat
