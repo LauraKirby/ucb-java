@@ -38,6 +38,7 @@ Quiz 5 - 
 
   13. Which method of the String class returns the character at the location you specify? 
     - charAt()
+
   14. Which method of the String class indicates whether the return value of length() is 0? 
     - isEmpty()
 
