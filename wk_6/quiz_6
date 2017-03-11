@@ -1,0 +1,75 @@
+Quiz #6   
+1.  Review: Fill in the blanks.
+  a. field b. c.
+2.  Fill in the blank:
+  The syntax for a method definition is: (a)return type methodName(type formalParameter1, (b)type formalParameter2) {} 
+3.  A (a)private field has visibility limited to the class in which it is declared. 
+4.  We saw in ReferenceVersusValue that a data type is either a primitive type or reference type.
+    A reference type allows multiple object variables to be assigned to, or "point" to, the same place in memory.
+    An object is a reference type, not a primitive type.
+    The example named ReferenceVersusValue shows that an assignment:
+    ◦ for a primitive variable, such as an int variable, is by the
+      (a)value directly assigned to that primitive variable 
+    ◦ for a reference type variable, such as a field on an object,
+      is by (b)reference to the object to which the field belongs. 
+5.  Which of the following is true:
+    Changing the state (value, data) of the price field on object1 affects
+    the state (value, data) of that price field on object2 if:   
+    (a) object2.price = object1.price;  // assign one value to another value 
+    ---> (b) object2 = object1; // assign one object to another object 
+6.  An int is a primitive type, and a String, or any other object, is a (a)reference type. 
+7.  Indicate the best response: Overloading methods and constructors enables Java to have the object-oriented feature of:
+    (a) inheritance,
+    (b) encapsulation,
+    ---> (c) polymorphism. 
+8.  To determine that each (a)signature of an overloaded method or constructor is unique,
+    the compiler checks the parameter list, which consists of the (b)number of parameters,
+    the data (c)type of the parameters, and the (d)order in which the parameters are listed.
+    For example, doSomething(int i, String s, String s2)  doSomething(String s, int i, String s2, String s3)  
+9.  What role, if any, does the return type play in establishing uniqueness in overloading? 
+    - None, the compiler won't look at it.
+10. A recursive method is one that calls (a)itself. 
+11. The number of valid int arguments for the following code is (a) zero, one or many.  doSomething(int ... v) 
+12. True or false: To access a static field or to call a static method, you must first call the constructor of that class. 
+    - False
+13.  The syntax to call a static method is
+    ◦ objectName(methodName); 
+    ◦ objectName.methodName(); 
+    ---> ◦ ClassName.methodName(); 
+    ◦ static methodName(); 
+14. True or false?: Typically, method definitions are found in the main method.  
+    - False
+15. True or false?: The syntax for defining both a method and a constructor
+    is:   returnType identifier(type parameterName, type parameterName) {...} 
+    - False
+16. True or false?: Before you can pass an object to a method,
+    you must first assign an identifier to the object. 
+    - False
+17. True or false?: an object can be the return type of a method provided
+    the object has been assigned to a variable. 
+    - True
+18. The use case for chaining constructors with this() is:
+    ◦ to confuse the person reading your code so you have more job security 
+    ◦ to take advantage of the JVM feature that this() provides better performance than that() 
+    ---> ◦ to reuse code 
+19. True or false: If you use this(), it must be the final line of the constructor. 
+    - False
+20. True or false: The finalize method allows the programmer control when the JVM performs memory management. 
+    - False
+21. Which of the following features of Java best supports inheritance?
+    ◦ that you can express the logic of a while loop more easily as a for loop 
+    ◦ that args is an array of type String available on the command-line of every application 
+    ---> ◦ that you can call a method of the String class on a string 
+22. Which of the following features of Java best supports encapsulation?
+    ◦ that Java is a strongly-typed language 
+    ◦ for-each loops 
+    ---> ◦ class definitions 
+23. Which of the following features of Java best supports polymorphism?
+    ◦ flexible syntax for if statements 
+    ---> ◦ overloaded methods 
+    ◦ overloaded "+" operator that can concatenate strings or perform addition 
+24. Indicate the best response: Making an instance variable private is one way Java supports
+    the object-oriented principle of:
+    (a) inheritance,
+    ---> (b) encapsulation,
+    (c) polymorphism.

@@ -3,6 +3,7 @@ class Donut
     boolean hasFlour;
     boolean hasIcing;
     boolean hasMulticoloredSprinkles;
+
     Donut() // plain, basic, the basis for other forms!
     {
         hasFlour = true;
@@ -11,17 +12,16 @@ class Donut
     // ChocolateCoveredDonut
     Donut(String s)
     {
-        this(); // call the parameterless constructor
-        meltChocolate();
+        this(); // call the parameterless constructor aka chain to the parameterless constructor
         hasIcing = true;
         System.out.println("The form with icing has been called");
     }
     //Chocolate with Speckels
-    Donut(String icing, boolean hasSpeckles)
+    Donut(String icing, boolean hasSprinkles)
     {
-        this("speckles, please"); // call the contructor that takes a String
+        this(icing); // call the contructor that takes a String
         this.hasMulticoloredSprinkles = true;
-        System.out.println("The chocolate form with speckles has been called");
+        System.out.println("The chocolate form with sprinkles has been called");
     }
 }
 class DonutWithChainedConstructorDemo
@@ -30,6 +30,6 @@ class DonutWithChainedConstructorDemo
     {
         //Donut brodieDonut = new Donut();
         //Donut namathDonut = new Donut("choclate");
-        Donut unitasDonut = new Donut("chocolate", true);
+        Donut unitasDonut = new Donut("chocolate", false);
     }
 }
