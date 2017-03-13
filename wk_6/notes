@@ -9,3 +9,7 @@ can ruby have overloaded constructors and/or methods?
 ducktators
 
 chained constructor
+
+default values:
+int = 0, double 0.0, boolean false, String null, char '',
+user the keyword this to call a contructor of the same class
