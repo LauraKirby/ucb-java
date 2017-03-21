@@ -1,128 +1,70 @@
 Quiz 7
-1.
-Can a subclass
- "hide" the
- superclass
- version of a method with the same name? yes
-2.
-Class B
- extends
- A. Both have a method called
- makeApplesauce. In B, this
-method takes a boolean
- argument. In A, this method takes a String
- argument. Is
-the method
- overloaded, overridden, both, or neither?
+1. Can a subclass "hide" the superclass version
+of a method with the same name?
+--> yes
 
- overloaded
+2. Class B extends
+A. Both have a method called makeApplesauce.
+In B, this method takes a boolean argument.
+In A, this method takes a String argument. Is
+the method overloaded, overridden, both, or neither?
+--> overloaded
 
-3.
-True or false:
- Just as a ruling of
- the federal Supreme
- Court overrides
- a ruling of
-the California Supreme Court,
- so
- a superclass method named doSomething()
+3. True or false: Just as a ruling of
+the federal Supreme Court overrides
+a ruling of the California Supreme Court,
+so a superclass method named doSomething()
 overrides the subclass method named doSomething().
-
 --> false
-4.
-True or false:
- The return type is
- not
- relevant
- in method
-overloading
-.
---> false
-5.
-True or false:
- The return type is
- not
- relevant
- in method
-overriding
-.
 
+4. True or false: The return type is not
+relevant in method overloading
+--> false
+
+5. True or false: The return type is
+not relevant in method overriding.
 --> true
 
-6.
-Suppose class B
- extends class A, and class A has a static SPEED_LIMIT
- field set
-to  65.
-When I explicitly call the constructor of class B, what is
- implicitly called
-such that
- the
- subclass field, B.SPEED_LIMIT, is automatically initialized to 65?
-
+6. Suppose class B extends class A,
+and class A has a static SPEED_LIMIT
+field set to  65. When I explicitly call the
+constructor of class B, what is implicitly called
+such that the subclass field, B.SPEED_LIMIT,
+is automatically initialized to 65?
 --> the superclass constructor
 
-7.
-Is Question 6 about
+7. Is Question 6 about
 encapsulation, polymorphism, or inheritance?
-
 --> inheritance
 
-8.
-Question
- 6 is an illustration of a concept
- called the __o_______ of
- derivation.
-
+8. Question 6 is an illustration of a concept
+called the __o_______ of derivation.
 --> order
 
-
 9. True or false: Just as we want not only the leaders, but each ordinary
- person, to have common sense, the common logic among a hierarchy of classes
- must be defined explicitly in each subclass.
-
-  --> false
+person, to have common sense, the common logic among a hierarchy of classes
+must be defined explicitly in each subclass.
+--> false
 
 10. At http://docs.oracle.com/javase/8/docs/api/java/lang/String.html
-, the
- class
-declaration
-says public final
- class String. What could
- we
- do with the
- behavior of
-the length()
-method
-of this class if
- the class were
- not
- declared
- to
- be
- final?
-
+, the class declaration says public final
+class String. What could we do with the behavior of
+the length() method of this class if the class were
+not declared to be final?
 ---> we could subclass the class and override the methods
 
-11.
-What does the word final mean for
- these
- three
- levels?:
-a) a final class cannot be ________  --> extended or subclasses
-b) a final method
- cannot be
- ________    --> overridden
-c)
-a final variable cannot be ________ --> reassigned
-
+11. What does the word final mean for
+these three levels?:
+a) a final class cannot be ________
+--> extended or subclasses
+b) a final method cannot be ________
+--> overridden
+c) a final variable cannot be ________
+--> reassigned
 
 12. no, abstract can be mixed
 13. super.calculate(22.2)
-14. a constuctor
-
-
-
+14. a constructor
 20. yes
 21. No
 22 yes
