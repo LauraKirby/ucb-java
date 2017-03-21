@@ -44,23 +44,17 @@
     calculateTax() and a non-abstract method, getPretaxPrice().
     (2) Write a subclass of the abstract class, Restaurant, named NewYorkStateRestaurant, and make NewYorkStateRestaurant implement calculateTax() with the rate of 4.0%.
     (3) Write a subclass of NewYorkStateRestaurant named NewYorkCityRestaurant that overrides calculateTax() such that this.calculateTax() charges 12.875%. Call both this.calculateTax() and super.calculateTax(). Note that New York official tax rates change periodically and are posted at http://ny.rand.org/stats/govtfin/salestax.html)
-
-
-
 */
 
 // 1. class
 class Plant
 {
-  // 5. class variable (1)
   private static String[] primitiveTypes = new String[] {"fern", "moss"};
   static String cholorplast = "I contain chlorophyll, a green pigment that absorbs light energy for photosynthesis";
 
-  // 4. instance variable, also known as a field (1)
   String name;
   int cellCount;
 
-  // 2. parameterized constructor (1)
   Plant(String name, int cellCount)
   {
     this.name = name;
@@ -84,7 +78,6 @@ class Magnolia extends Plant
 
   String flowerColor;
   Integer waterLevel;
-
 
   Magnolia(String plantName, Integer plantCellCount, String flowerColor, Integer waterLevel)
   {
