@@ -1,0 +1,81 @@
+Quiz 8
+1.  True or False: The constructor of an abstract class or an interface specifies subclasses, and implementing classes define their constructors.
+
+
+2.  The __i______ operator returns a value of type _____________ that indicates whether an object belongs to the specified class (or one of its subclasses). See Lecture 8: Interfaces, Jar files, and Packages#interfaceastype
+
+
+3.  Is an object of type Object also of type String?
+
+
+4.  Is an object of type String also of type Object?
+
+
+5.  Must a class that implements an interface provide a body for all the non-default or non-static members of the interface?
+
+
+6.  If your customer-developers write an application against the 1.0 version of your software that includes an interface, and in version 2.0 you add a new non-static and non-default method to the interface, or change the signature of an interface method that is non-static and non-default, what effect, if any, does the addition or change have to customer-developers who want to use their existing code against the 2.0 version?
+
+
+7.  True or False: Java 8 (released March 2014) is the first version of Java that allows an interface to provide a
+  a.  default implementation of a method.
+  b.  static method
+  8.  Java has the principle of single-inheritance:
+  a.  Can a class extend more than one abstract class?
+  b.  Can a class implement more than one interface?
+
+
+9.  True or False: abstract classes allow non-static and non-final fields and allow methods to be public, private, or protected while interface fields are inherently public, static, and final, and all interface methods are inherently public.
+
+
+10. True or False: To call a static method of an interface, use the dot operator preceded by the name of a class that implements that interface.
+
+
+11. An interface allows a software architect to provide a specification for another programmer in regard to:
+  a.  methods - True or False?
+  b.  constructors - True or False?
+  c.  fields - True or False?
+
+
+12. Which of the following does a class that implements an interface need to conform to?: (a) the method names of the interface (b) the method signatures of the interface (c) the return types of the methods in the interface
+
+
+13. To implement the Serializable interface, how many methods must a class implement?
+
+
+14. Single inheritance governs the relationship between a subclass and its superclass. How many interfaces can a class implement?
+
+
+15. If a method takes an argument of type Serializable, will it accept an argument of a class that implements the Serializable interface?
+
+
+16. Can an array of type Taxable store objects of all class types that implement the Taxable interface, even if you did not write all those classes?
+
+
+17.  What is the output?  
+
+
+18. The previous question dealt with an interface field. How do you prevent a field that is not in an interface from being reassigned?
+
+
+19. Regarding http://hadoop.apache.org/docs/r2.7.1/api/org/apache/hadoop/mapreduce/security/TokenCache.html, suppose you are writing a class named TokenCache and you want this class to belong to a package named org.apache.hadoop.mapreduce.security:
+  a.  What is the statement to makes the class belong to that package?
+
+  b.  where must the statement be in the TokenCache.java source code file?
+
+
+20. Suppose you work on the Compensation class in the humanresources package, and your company collaborates with outside contractors who work on the Paystub class in the payroll package. If you want to prevent those outside contractors from manipulating the setSalary() method of your class and all its subclasses, whether written by you or anyone else, whether those subclasses are in the same package or a different package, which access modifier do you use when you define your setSalary() method?
+
+
+21. What does the following statement mean?: import org.apache.cassandra.service.*;
+
+
+22. If your program is going to make many method calls (or refer to fields) that are members of uniquely named classes that belong to a package, what statement allows you to avoid having to type the fully-qualified name of each class that belongs to the package?
+
+
+23. What is the Java convention for package naming to ensure that Company-A's packages do not conflict with those of Company-B?
+24. What does the acronym JAR stand for?
+
+
+25. What functionality does a JAR provide that a ZIP does not?
+
