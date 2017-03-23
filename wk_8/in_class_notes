@@ -1,0 +1,24 @@
+in class notes
+abstract:
+- classic functionality: i want to give you some of the the functionality but not all of it that you will need to define later
+
+interface is about capability
+-
+
+interface:
+methods must be public
+fields can be public, static, and final
+
+
+onClick as a separate thread...
+Runnable interface is used to start a thread
+
+java.sql interface
+blob interface
+binary large object
+various database vendors will use blob differently
+
+JAR file stands for Java Archive
+
+jar  cmf  manifestname.txt  jarname.jar  *
+cmf - create manifest file
