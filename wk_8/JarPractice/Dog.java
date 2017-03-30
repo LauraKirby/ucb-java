@@ -1,3 +1,4 @@
+// Two classes that have non-empty implementations the interface (2)
 class Dog implements Animal
 {
   public String fetch()

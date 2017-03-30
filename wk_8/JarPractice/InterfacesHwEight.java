@@ -56,6 +56,7 @@ Sending Homework:
   - I will rename your attachment to .jar, run the jar, inflate the jar, and examine the source code.
 */
 
+// 3. A class with main that exercises the implemented methods on both kinds of objects
 class InterfacesHwEight
 {
   public static void main(String[] args)
@@ -69,6 +70,3 @@ class InterfacesHwEight
     aDog.fetch();
   }
 }
-
-
-

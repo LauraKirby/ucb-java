@@ -1,0 +1,94 @@
+1. What is the difference between an Exception and an Error?
+- Error related to errors that occur in the JVM
+- Exception in the source code
+
+2. True or False: A senior programmer is someone who is able write code to handle the typical errors that the application might encounter.
+- False, should write code for exception
+
+3. True or false: An exception object is an instance of a class.
+- True
+
+4. What is the default exception handling mechanism?
+  a. print error message
+  b. prints the stack trace
+  c. stop running, program terminate
+
+
+5. What is the benefit of writing code to deal with exceptions?
+  a. For the end-user?: so that the program doesn't just crash
+  b. For the software developer or "white box" tester?: so that the test has more information on what caused the execption
+  c. For the software architect?: so that they can group certain exceptions together, to instruct software developers from
+
+6. What causes the ArrayIndexOutOfBounds exception?
+  a. index is attemped to be used that is higher or lower than the index within the array
+
+
+7. Is Throwable a class or an interface? What is the advantage of having it be a [class or interface] rather than a [class or interface]?
+  a. class
+  b. advantage: there are different constructors for throwable, you won't have to write an implemenation for each method
+
+8. If you try to divide an int by zero, will you get an Error or an Exception, and what is its name?
+  a. Exception
+  b. ArithmeticException
+
+9. If you divide a double by zero, what is the result?
+  a. infinity
+
+10. Can the compiler detect the problem of the class with main being in a file with a non-matching file name, such as class HelloWorld being in Helloworld.java?
+  a. no
+
+11. Can the code in a catch block at runtime fix the problem of the class with main being in a file with a non-matching file name, such as class HelloWorld being in Helloworld.java?
+a. no
+
+12. Should this problem above be an Error or an Exception?
+a. it's an Error becuase you cannot fix it at runtime
+
+13. Assuming your program has one try block and one catch block, what makes execution skip over:
+  the catch block? if 0 occurs
+  part of the try block? if an exception occurs
+
+14. Why might you create a custom exception?
+  a. allows the program to react or handle any special conditions
+
+15. Can you use the keyword throw to force the JVM to rethrow an exception that has already been caught?
+  a. yes
+
+16. When do you use the keyword throws?
+  a. to tell the compiler that you do not have a catch block for that type of exception, only necessary for checked exceptions, which are not part of Runtime Exceptions
+
+17. (Fill in the blanks) A (a) final block is commonly used to allow the JVM's garbage collector to "cleanup" resource-intensive objects created in the corresponding try block. One example is a (b) database connection, which has a close method - http://docs.oracle.com/javase/7/docs/api/java/sql/Connection.html#close%28%29. Another example would be to close the memory buffer of a stream, by calling  http://docs.oracle.com/javase/7/docs/api/java/io/BufferedInputStream.html#close%28%29.
+
+18. Does the finally code block execute if there is:
+  a. a catch block that matches the exception that has been thrown?
+    - yes
+  b. no catch block that matches the exception that has been thrown?
+    - yes
+
+19. True or False: If a method is defined to return a value and that method has a finally block, immediately after the method returns the value to the caller, but before the caller can run its code, the finally block is automatically executed.
+  - False
+
+20. True or False: The compiler allows you to have try and finally without any catch. - True
+
+21. If there are multiple catch blocks, must each be for a different exception type? - Yes
+
+
+22. We saw how inheritance is enforced by a subclass implicitly calling the constructor of its superclass. Should we write our code so that the superclass version of the exception is caught first?
+- no, "unreachable code"
+
+23. Which operator allows a catch block to catch more than one type of exception? Hint: See FinallyAlwaysExecutesWithASingleCatch.java
+- | or  (pipe)
+
+24. What would be a use case for having one catch block catch more than one type of exception?
+- convenient, DRY
+
+25. (Fill in the blanks) The majority of exceptions are objects of a __s_______________ of java.lang.R______________.
+a. subclass
+b. java.lang.RunTimeErrors
+
+26. True or False: The length of an array must be 1 or greater.
+a. False
+
+27. Which of the following are true about an application that allows its end-users to see a stack trace?
+  a. Stack trace information can enable end-users to give Support helpful diagnostic information. - True
+  b. Stack trace information can confuse an end-user who has not taken First Course in Java at U.C. Berkeley Extension. - True
+  c. Stack trace information can enable a malicious hacker to get information that might useful to launch an attack. - True
