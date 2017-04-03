@@ -61,7 +61,7 @@ class Plant
     this.cellCount = cellCount;
   }
 
-  Integer calculateChloroplast () {
+  Integer calculateChloroplast() {
     Integer chloroplastRatio = 100;
     Integer totalCholoroplast = (this.cellCount * chloroplastRatio);
     System.out.println("------------- \n Method belonging to the 'super' class was called. \n There are about " + chloroplastRatio + " cholorplasts per cell. \n Returning: " + totalCholoroplast + "\n -------------");
@@ -87,7 +87,7 @@ class Magnolia extends Plant
   }
 
   // a. override a method inherited from its immediate superclass
-  Integer calculateChloroplast () {
+  Integer calculateChloroplast() {
     Integer chloroplastRatio = 100;
     Integer totalCholoroplast = (cellCount * chloroplastRatio) + 25;
     System.out.println("------------- \n Override 'calculateChloroplast' \n Returning: " + totalCholoroplast + "\n -------------");
@@ -95,7 +95,7 @@ class Magnolia extends Plant
   }
 
   // b. use the this keyword to make use of the local version of the overridden method
-  String printThisCholoroplast (){
+  String printThisCholoroplast(){
     Integer result = this.calculateChloroplast();
     System.out.println("------------- \n Call class method using keyword 'this'. \n calculateChloroplast " + result + "\n -------------");
     String stringResult = Integer.toString(result);
@@ -103,7 +103,7 @@ class Magnolia extends Plant
   }
 
   // c. use the super keyword to make use of the super version of the overridden method
-  String printSuperCholoroplast (){
+  String printSuperCholoroplast(){
     Integer result = super.calculateChloroplast();
     System.out.println("------------- \n Call super class method using keyword 'super' \n 'calculateChloroplast' " + result + "\n -------------");
     String stringResult = Integer.toString(result);
