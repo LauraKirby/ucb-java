@@ -87,7 +87,7 @@ class Plant
     this.cellCount = cellCount;
   }
 
-  boolean isPrimitive () {
+  boolean isPrimitive() {
     String plantType = this.name.toLowerCase();
     boolean result = false;
     if (plantType.equals("fern") || plantType.equals("moss")) {
@@ -97,7 +97,7 @@ class Plant
   }
 
   // 3. parameterized method (1)
-  String suckInNutrients (String mode) {
+  String suckInNutrients(String mode) {
     System.out.println("I absorb nutrients through my " + mode + ".");
     String response = "Moving water in, the mode is unknown.";
     if (mode == "roots")
@@ -112,7 +112,7 @@ class Plant
     return response;
   }
 
-  Integer calculateChloroplast (Integer cells) {
+  Integer calculateChloroplast(Integer cells) {
     Integer chloroplastRatio = 100;
     Integer totalCholoroplast = (cells * chloroplastRatio);
     System.out.println("There are about " + chloroplastRatio + " cholorplasts per cell. \n Returning: " + totalCholoroplast);
