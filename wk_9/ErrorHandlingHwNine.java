@@ -22,46 +22,75 @@
 
 */
 
-// 1. class
-class Plant
-{
+class PlantException extends Exception {
+  int max;
+  PlantException(int max) {
+    this.max = max;
+    System.out.println(" \t Exception: Must enter a number lower or equal to: " + max);
+  }
+}
+
+class Plant {
   private static String[] primitiveTypes = new String[] {"fern", "moss"};
   static String cholorplast = "I contain chlorophyll, a green pigment that absorbs light energy for photosynthesis";
 
   String name;
+  String[] bloomingSeasons;
   int cellCount;
-  static int waterLevel = 10;
-  static int maxWater = 15;
+  int waterLevel = 10;
+  int maxWater = 20;
 
-  Plant(String name, int cellCount)
-  {
+  Plant(String name, int cellCount) {
     this.name = name;
     this.cellCount = cellCount;
   }
 
-  Integer calculateChloroplast() {
-    Integer chloroplastRatio = 100;
-    Integer totalCholoroplast = (this.cellCount * chloroplastRatio);
-    System.out.println("------------- \n Method belonging to the 'super' class was called. \n There are about " + chloroplastRatio + " cholorplasts per cell. \n Returning: " + totalCholoroplast + "\n -------------");
-    return totalCholoroplast;
+  int suckInNutrients(int waterAdded) throws PlantException {
+    int spaceForConsumption = maxWater - waterLevel;
+    System.out.println("'suckInNutrients' was called with " +  waterAdded + "\n\t - waterAdded: " + waterAdded + "\n\t - maxWater: " + maxWater + "\n\t - current waterLevel: " + waterLevel + "\n\t - spaceForConsumption: " + spaceForConsumption );
+    if ( waterLevel < maxWater )
+    {
+      if ( waterAdded < spaceForConsumption ) {
+        waterLevel = waterLevel + waterAdded;
+        System.out.println("\n\t Since: waterAdded is less than spaceForConsumption. \n\t\t -> return new waterLevel: " + waterLevel + "\n");
+      }
+      else if ( waterAdded > spaceForConsumption ) {
+        System.out.println("\n\t Since: waterAdded is greater than spaceForConsumption. \n\t\t -> throw new PlantException\n");
+        throw new PlantException(spaceForConsumption);
+      }
+    } else {
+      System.out.println("Water not added");
+    }
+    return waterLevel;
   }
 
-  int suckInNutrients(int waterAdded) {
-    if ( waterAdded && waterLevel > )
-    {
+  // 2. The program must catch: b) a custom exception that you invent
+  void feedPlant(int quantity) {
+    try {
+      suckInNutrients(quantity);
+    } catch(PlantException e) {
+      System.out.println(" \t - Plant was not able to consume nutrients.");
+    } finally {
+      System.out.println(" \t - ending waterLevel: " + waterLevel);
+      System.out.println(" \t - Finally: Report waterLevel to head gardner\n");
+    }
+  }
 
-      response = "Moving water in!";
-    }
-    else if (false)
+  // 2. The program must catch: a) a standard exception
+  void printThreeBloomingSeasons (){
+    try
     {
-      response = "The plant has died, no water entered the plant.";
+      for(String s : bloomingSeasons)
+      {
+        System.out.println(s);
+        String thirdSeason = bloomingSeasons[2];
+      }
+    } catch(Exception e){
+      System.out.println("Could not print months. Double check that your object has 3 blooming seasons.");
     }
-    System.out.println(response);
-    return response;
   }
 }
 
-// 2. a subclass
 class Magnolia extends Plant
 {
   static boolean doesBloom = true;
@@ -69,8 +98,7 @@ class Magnolia extends Plant
   static boolean hasRoots = true;
 
   String flowerColor;
-  static int waterLevel = 15;
-
+  String[] bloomingSeasons = {"spring", "summer"};
 
   Magnolia(String plantName, Integer plantCellCount, String flowerColor, int waterLevel)
   {
@@ -78,38 +106,18 @@ class Magnolia extends Plant
     this.flowerColor = flowerColor;
     this.waterLevel = waterLevel;
   }
-
-  // a. override a method inherited from its immediate superclass
-  Integer calculateChloroplast() {
-    Integer chloroplastRatio = 100;
-    Integer totalCholoroplast = (cellCount * chloroplastRatio) + 25;
-    System.out.println("------------- \n Override 'calculateChloroplast' \n Returning: " + totalCholoroplast + "\n -------------");
-    return totalCholoroplast;
-  }
-
-  // b. use the this keyword to make use of the local version of the overridden method
-  String printThisCholoroplast(){
-    Integer result = this.calculateChloroplast();
-    System.out.println("------------- \n Call class method using keyword 'this'. \n calculateChloroplast " + result + "\n -------------");
-    String stringResult = Integer.toString(result);
-    return stringResult;
-  }
-
-
-  String printSuperCholoroplast(){
-    Integer result = super.calculateChloroplast();
-    System.out.println("------------- \n Call super class method using keyword 'super' \n 'calculateChloroplast' " + result + "\n -------------");
-    String stringResult = Integer.toString(result);
-    return stringResult;
-  }
 }
 
 class ErrorHandlingHwNine {
 
   public static void main(String[] args){
     Magnolia aMagnolia = new Magnolia("Stellata", 540, "white", 4);
-    aMagnolia.calculateChloroplast();
-    aMagnolia.printThisCholoroplast();
-    aMagnolia.printSuperCholoroplast();
+
+    // 2. The program must catch: b) a custom exception that you invent
+    aMagnolia.feedPlant(3);
+    aMagnolia.feedPlant(100);
+
+    // 2. The program must catch: a) a standard exception
+    aMagnolia.printThreeBloomingSeasons();
   }
 }
