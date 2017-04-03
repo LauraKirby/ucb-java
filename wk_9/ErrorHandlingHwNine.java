@@ -3,13 +3,13 @@
     s15 Laura Kirby
 
   Usage:
-    java InterfacesHwEight
+    java ErrorHandlingHwNine
 
   Application description::
-    1.  Write a program with exception handling that uses:
-        a) try,
-        b) catch, and
-        c) finally.
+    1. Write a program with exception handling that uses:
+       a) try,
+       b) catch, and
+       c) finally.
 
     2. The program must catch:
       a) a standard exception provided at http://docs.oracle.com/javase/8/docs/api/
@@ -19,7 +19,6 @@
     - Instead of writing an entirely new program, it is acceptable to add exception handling to one of your earlier programs.
     - Follow the Java convention of naming your Exception class with suffix Exception.
     - For example, OddNumberException or AttemptLimitExceededException.
-
 */
 
 class PlantException extends Exception {
@@ -48,13 +47,12 @@ class Plant {
   int suckInNutrients(int waterAdded) throws PlantException {
     int spaceForConsumption = maxWater - waterLevel;
     System.out.println("'suckInNutrients' was called with " +  waterAdded + "\n\t - waterAdded: " + waterAdded + "\n\t - maxWater: " + maxWater + "\n\t - current waterLevel: " + waterLevel + "\n\t - spaceForConsumption: " + spaceForConsumption );
-    if ( waterLevel < maxWater )
-    {
-      if ( waterAdded < spaceForConsumption ) {
+    if(waterLevel < maxWater) {
+      if(waterAdded < spaceForConsumption) {
         waterLevel = waterLevel + waterAdded;
         System.out.println("\n\t Since: waterAdded is less than spaceForConsumption. \n\t\t -> return new waterLevel: " + waterLevel + "\n");
       }
-      else if ( waterAdded > spaceForConsumption ) {
+      else if(waterAdded > spaceForConsumption) {
         System.out.println("\n\t Since: waterAdded is greater than spaceForConsumption. \n\t\t -> throw new PlantException\n");
         throw new PlantException(spaceForConsumption);
       }
@@ -77,15 +75,13 @@ class Plant {
   }
 
   // 2. The program must catch: a) a standard exception
-  void printThreeBloomingSeasons (){
-    try
-    {
-      for(String s : bloomingSeasons)
-      {
+  void printThreeBloomingSeasons() {
+    try {
+      for(String s : bloomingSeasons) {
         System.out.println(s);
         String thirdSeason = bloomingSeasons[2];
       }
-    } catch(Exception e){
+    } catch(Exception e) {
       System.out.println("Standard Exception: Could not print months. Double check that your object has 3 blooming seasons.");
     }
   }
@@ -100,8 +96,7 @@ class Magnolia extends Plant
   String flowerColor;
   String[] bloomingSeasons = {"spring", "summer"};
 
-  Magnolia(String plantName, Integer plantCellCount, String flowerColor, int waterLevel)
-  {
+  Magnolia(String plantName, Integer plantCellCount, String flowerColor, int waterLevel) {
     super(plantName, plantCellCount);
     this.flowerColor = flowerColor;
     this.waterLevel = waterLevel;
@@ -110,7 +105,7 @@ class Magnolia extends Plant
 
 class ErrorHandlingHwNine {
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
     Magnolia aMagnolia = new Magnolia("Stellata", 540, "white", 4);
 
     // 2. The program must catch: b) a custom exception that you invent
