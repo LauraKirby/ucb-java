@@ -26,7 +26,7 @@ class PlantException extends Exception {
   int max;
   PlantException(int max) {
     this.max = max;
-    System.out.println(" \t Exception: Must enter a number lower or equal to: " + max);
+    System.out.println(" \t Custom Exception: Must enter a number lower or equal to: " + max);
   }
 }
 
@@ -86,7 +86,7 @@ class Plant {
         String thirdSeason = bloomingSeasons[2];
       }
     } catch(Exception e){
-      System.out.println("Could not print months. Double check that your object has 3 blooming seasons.");
+      System.out.println("Standard Exception: Could not print months. Double check that your object has 3 blooming seasons.");
     }
   }
 }
