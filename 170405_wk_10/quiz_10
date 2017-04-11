@@ -8,20 +8,21 @@ Quiz 10 - quiz10-2017.docx
   a.  The programmers were in a hurry to release the product and did not have time to think up more Error classes. 
   --> b.  Our program might recover from an Exception, but not from an Error, so we should focus on Exceptions instead. 
 
-3.  Java's built-in stream for output System.out is in the package java.lang, and we used it in HelloWorld.java 
+3.  Java's built-in stream for output a)System.out is in the package b)java.lang, and we used it in HelloWorld.java 
 
 4.  System.out.print() writes to standard output. What is the equivalent method for reading from standard input? 
   - System.in.read()
 
 5.  java.io.Writer is an abstract class that is extended by java.io.BufferedWriter and java.io.FileWriter.
   a.  Why should java.io.Writer be an abstract class instead of an interface? 
-    - because we want the Writer class to have specific functionality
+    - we want the Writer class to have specific functionality
 
   b.  Instead of a regular class? 
-    - because how the Writer functionality is implemented will vary depending on the types of "writing" (eg audio)
+    - how the Writer functionality is implemented will vary depending on the types of "writing" (eg audio vs plain text)
 
 6.  What does read() return at the end of the file? 
   -   -1
+
 7.  Would the value of 0 be a better choice for the return value of read() at the end of the file? 
   - No
 
@@ -32,14 +33,14 @@ Quiz 10 - quiz10-2017.docx
   - java.lang.Throwable
 
 10. Verify that java.io.BufferedReader and java.io.Console have a method that allows you to read an entire line of text from the keyboard.
-  a.  Why would you want your application to read an entire line of text rather than read a single character at a time?  Yes
+  a.  Why would you want your application to read an entire line of text rather than read a single character at a time?  - It is more efficient
   b.  The name of this method is: readLine
   c.  What is the return type of this method?  String
   d.  Which value is returned if the method cannot find a line of text to return?  null
 
 11. The following code    
   BufferedReader br = new BufferedReader(new InputStreamReader(System.in));  
-  converts keyboard bytes into a non-buffered input stream reader and finally into a buffered reader. 
+  - converts keyboard bytes into a non-buffered InputStreamReader and finally into a BufferedReader. 
 
 12. Write the code in the previous question as two separate lines of code. 
   InputStreamReader streamReader = new InputStreamReader(System.in)
@@ -57,7 +58,7 @@ b.  It is better to write the logic of the previous question as a single line of
   - Yes
 
 15. Can write(byte[] b, int offset, int lenOfByteArray) on a FileOutputStream be used to write out an entire file? (See CopyFileWithStream.java) 
-  - Look at copy file to stream for answer to this.
+  - Yes, see notes from lecture 10: "fos.write(myBuffer, 0, i);"
 
 16. Why is System.out static? 
   - more convenient that having to write System mySystem() = new System in each and every program
@@ -70,7 +71,7 @@ b.  It is better to write the logic of the previous question as a single line of
   - read, close
 
 19. Why would those methods be abstract? 
-  - so we can accomidate various types
+  - so our source code can accommodate various types
 
 20. Can a subclass override other methods of java.io.Reader? 
   - yes, because there are additional methods in the class Reader are not final
@@ -85,4 +86,7 @@ b.  It is better to write the logic of the previous question as a single line of
 22. Regarding the APIs for multithreading:
   a.  Which interface allows you to create a thread?  java.lang.Runnable
   b.  What does that interface specify?  the run method
-  c.  Why use this interface instead of creating a subclass of Thread and overridings its methods? See http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html  -- it is lightweight to implement just one method (run). We should not subclass a class unless we have no other good alternatives. Keep debugging more simple by using the interface instead of subclassing
+  c.  Why use this interface instead of creating a subclass of Thread and over riding its methods? See http://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html 
+      - it is lightweight to implement just one method (run).
+      - We should not subclass a class unless we have no other good alternatives.
+      - Keep debugging more simple by using the interface instead of subclassing
