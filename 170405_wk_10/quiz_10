@@ -62,7 +62,6 @@ b.  It is better to write the logic of the previous question as a single line of
 
 16. Why is System.out static? 
   - more convenient that having to write System mySystem() = new System in each and every program
-  - You
 
 17. Why is System.out final? 
   - so we cannot change it
